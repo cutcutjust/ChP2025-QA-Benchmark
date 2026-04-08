@@ -14,6 +14,10 @@
 
 本基准共包含 **425** 条精心标注的问答样本（其中可回答样本 278 条，不可回答样本 147 条），并对“品种-检测项-方法-条件/限度”之间的多跳结构化对齐能力进行重点考察。
 
+<p align="center">
+  <img src="assets/dataset_landscape.png" alt="Dataset Landscape" width="100%">
+</p>
+
 ### 🏆 排行榜 (Leaderboard)
 
 基于本数据集的基线评测结果如下（更多消融实验结果详见论文）：
@@ -25,6 +29,10 @@
 | Graph RAG         | 24.8%            | 38.3%    | 17.9%              | 19.7%           | 86.4%                     |
 | Hier RAG          | 42.1%            | 59.4%    | 44.4%              | 42.7%           | 72.8%                     |
 | **Ours (Method 3)**| **56.8%**        | **69.4%**| **64.4%**          | **67.5%**       | **76.2%**                 |
+
+<p align="center">
+  <img src="assets/main_results_scorecard.png" alt="Scorecard" width="100%">
+</p>
 
 ### 📂 仓库结构
 
@@ -58,18 +66,6 @@ ChP2025-QA-Benchmark/
            print(f"Is Answerable: {data['is_answerable']}")
            break
    ```
-
-### 📄 引用 (Citation)
-
-如果您在研究中使用了本数据集或代码，请引用我们的论文：
-```bibtex
-@article{YourName2026ChP2025QA,
-  title={Structured Question Answering over the Chinese Pharmacopoeia: Benchmark Construction and Hierarchical Path RAG with Evidence Verification},
-  author={Your Name and Co-authors},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2026}
-}
-```
 
 ---
 
